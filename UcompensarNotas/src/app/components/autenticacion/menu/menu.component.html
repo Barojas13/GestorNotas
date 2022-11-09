@@ -1,152 +1,100 @@
-<div class='dashboard'>
-    <div class="dashboard-nav">
-        <header>
-            <img src="..\assets\img\logoCompensar.jpg" style="width: 150px;"/>
-        </header>
-        <nav class="dashboard-nav-list"><a href="#" class="dashboard-nav-item"><i class="fas fa-home"></i>
-            Home </a><a
-                href="#" class="dashboard-nav-item active"><i class="fas fa-tachometer-alt"></i> dashboard
-        </a><a
-                href="#" class="dashboard-nav-item"><i class="fas fa-file-upload"></i> Upload </a>
-            <div class='dashboard-nav-dropdown'><a href="#!" class="dashboard-nav-item dashboard-nav-dropdown-toggle"><i
-                    class="fas fa-photo-video"></i> Media </a>
-                <div class='dashboard-nav-dropdown-menu'><a href="#"
-                                                            class="dashboard-nav-dropdown-item">All</a><a
-                        href="#" class="dashboard-nav-dropdown-item">Recent</a><a
-                        href="#" class="dashboard-nav-dropdown-item">Images</a><a
-                        href="#" class="dashboard-nav-dropdown-item">Video</a></div>
+<div class="dashboard">
+  <div class="dashboard-nav">
+    <header>
+      <img src="..\assets\img\logoCompensar.jpg" style="width: 150px" />
+    </header>
+    <nav class="dashboard-nav-list">
+      <a href="#" class="dashboard-nav-item"
+        ><i class="fas fa-home"></i> Home
+      </a>
+      <a href="../autenticacion/login" class="dashboard-nav-item active"
+        ><i class="fas fa-tachometer-alt"></i> Profesor
+      </a>
+      <a href="../autenticacion/lista-alumno" class="dashboard-nav-item"
+        ><i class="fas fa-tachometer-alt"></i> Alumno
+      </a>
+      <a href="../autenticacion/lista-materia" class="dashboard-nav-item"
+          ><i class="fas fa-tachometer-alt"></i> Materia
+        </a>
+      <div class="nav-item-divider"></div>
+      <a href="#" class="dashboard-nav-item"
+        ><i class="fas fa-sign-out-alt"></i> Logout
+      </a>
+    </nav>
+  </div>
+  <div class="dashboard-app">
+    <header class="dashboard-toolbar">
+      <a href="#!" class="menu-toggle"><i class="fas fa-bars"></i></a>
+    </header>
+    <div class="dashboard-content">
+      <div class="container">
+        <div class="card">
+          <div class="card-header">
+            <h1>Crear/Actualizar Profesor</h1>
+          </div>
+          <div class="card-body">
+            <div class="d-flex flex-column">
+              <div class="p-2">
+                <button
+                  type="button"
+                  class="btn btn-success"
+                  (click)="abrirModal(modalParametriaCrearReporte)"
+                  style="background-color: #c46e0d"
+                >
+                  Crear Profesor
+                </button>
+              </div>
+              <div class="p-2">
+                <table class="table align-middle mb-0 bg-white">
+                  <thead class="bg-light">
+                    <tr>
+                      <th>Nombre</th>
+                      <th>Cedula</th>
+                      <th>Correo</th>
+                      <th>Telefono</th>
+                      <th>Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <div class="d-flex align-items-center">
+                          <div class="ms-3">
+                            <p class="text-muted mb-0">
+                              Brayan Antonio Rojas Torres
+                            </p>
+                          </div>
+                        </div>
+                      </td>
+                      <td>
+                        <p class="text-muted mb-0">1031183150</p>
+                      </td>
+                      <td>
+                        <p class="text-muted mb-0">barojas@ucompensar.edu.co</p>
+                      </td>
+                      <td>
+                        <p class="text-muted mb-0">3222585907</p>
+                      </td>
+                      <td>
+                        <button
+                          type="button"
+                          class="btn btn-link btn-sm btn-rounded"
+                        >
+                          Editar
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
-            <div class='dashboard-nav-dropdown'><a href="#!" class="dashboard-nav-item dashboard-nav-dropdown-toggle"><i
-                    class="fas fa-users"></i> Users </a>
-                <div class='dashboard-nav-dropdown-menu'><a href="#"
-                                                            class="dashboard-nav-dropdown-item">All</a><a
-                        href="#" class="dashboard-nav-dropdown-item">Subscribed</a><a
-                        href="#"
-                        class="dashboard-nav-dropdown-item">Non-subscribed</a><a
-                        href="#" class="dashboard-nav-dropdown-item">Banned</a><a
-                        href="#" class="dashboard-nav-dropdown-item">New</a></div>
-            </div>
-            <div class='dashboard-nav-dropdown'><a href="#!" class="dashboard-nav-item dashboard-nav-dropdown-toggle"><i
-                    class="fas fa-money-check-alt"></i> Payments </a>
-                <div class='dashboard-nav-dropdown-menu'><a href="#"
-                                                            class="dashboard-nav-dropdown-item">All</a><a
-                        href="#" class="dashboard-nav-dropdown-item">Recent</a><a
-                        href="#" class="dashboard-nav-dropdown-item"> Projections</a>
-                </div>
-            </div>
-            <a href="#" class="dashboard-nav-item"><i class="fas fa-cogs"></i> Settings </a><a
-                    href="#" class="dashboard-nav-item"><i class="fas fa-user"></i> Profile </a>
-          <div class="nav-item-divider"></div>
-          <a
-                    href="#" class="dashboard-nav-item"><i class="fas fa-sign-out-alt"></i> Logout </a>
-        </nav>
-    </div>
-    <div class='dashboard-app'>
-        <header class='dashboard-toolbar'><a href="#!" class="menu-toggle"><i class="fas fa-bars"></i></a></header>
-        <div class='dashboard-content'>
-            <div class='container'>
-                <div class='card'>
-                    <div class='card-header'>
-                        <h1>Crear/Actualizar Profesor</h1>
-                    </div>
-                    <div class='card-body'>
-                        <button type="button" class="btn btn-success" style="float: right;">Crear Profesor</button>
-                        <br>
-                        <table class="table align-middle mb-0 bg-white">
-                            <thead class="bg-light">
-                              <tr>
-                                <th>Name</th>
-                                <th>Title</th>
-                                <th>Status</th>
-                                <th>Position</th>
-                                <th>Actions</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>
-                                  <div class="d-flex align-items-center">
-                                    <div class="ms-3">
-                                      <p class="fw-bold mb-1">John Doe</p>
-                                      <p class="text-muted mb-0">john.doe@gmail.com</p>
-                                    </div>
-                                  </div>
-                                </td>
-                                <td>
-                                  <p class="fw-normal mb-1">Software engineer</p>
-                                  <p class="text-muted mb-0">IT department</p>
-                                </td>
-                                <td>
-                                  <span class="badge badge-success rounded-pill d-inline">Active</span>
-                                </td>
-                                <td>Senior</td>
-                                <td>
-                                  <button type="button" class="btn btn-link btn-sm btn-rounded">
-                                    Edit
-                                  </button>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <div class="d-flex align-items-center">
-                                    <div class="ms-3">
-                                      <p class="fw-bold mb-1">Alex Ray</p>
-                                      <p class="text-muted mb-0">alex.ray@gmail.com</p>
-                                    </div>
-                                  </div>
-                                </td>
-                                <td>
-                                  <p class="fw-normal mb-1">Consultant</p>
-                                  <p class="text-muted mb-0">Finance</p>
-                                </td>
-                                <td>
-                                  <span class="badge badge-primary rounded-pill d-inline"
-                                        >Onboarding</span
-                                    >
-                                </td>
-                                <td>Junior</td>
-                                <td>
-                                  <button
-                                          type="button"
-                                          class="btn btn-link btn-rounded btn-sm fw-bold"
-                                          mdbRipple rippleColor="dark"
-                                          >
-                                    Edit
-                                  </button>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <div class="d-flex align-items-center">
-                                    <div class="ms-3">
-                                      <p class="fw-bold mb-1">Kate Hunington</p>
-                                      <p class="text-muted mb-0">kate.hunington@gmail.com</p>
-                                    </div>
-                                  </div>
-                                </td>
-                                <td>
-                                  <p class="fw-normal mb-1">Designer</p>
-                                  <p class="text-muted mb-0">UI/UX</p>
-                                </td>
-                                <td>
-                                  <span class="badge badge-warning rounded-pill d-inline">Awaiting</span>
-                                </td>
-                                <td>Senior</td>
-                                <td>
-                                  <button
-                                          type="button"
-                                          class="btn btn-link btn-rounded btn-sm fw-bold"
-                                          mdbRipple rippleColor="dark"
-                                          >
-                                    Edit
-                                  </button>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </div>
+
+<ng-template #modalParametriaCrearReporte let-modal>
+  <app-crear-profesor></app-crear-profesor>
+</ng-template>
