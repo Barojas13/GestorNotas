@@ -8,8 +8,13 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 })
 export class LoginComponent implements OnInit {
 
+  mostrarRecibos: boolean = false;
   constructor(private modalService: NgbModal) { }
 
   ngOnInit(): void {
+  }
+
+  onClick() {
+    this.mostrarRecibos = !this.mostrarRecibos;
   }
 }

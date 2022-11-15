@@ -1,0 +1,116 @@
+<div class="dashboard">
+    <div class="dashboard-nav">
+      <header>
+        <img src="..\assets\img\logoCompensar.jpg" style="width: 150px" />
+      </header>
+      <nav class="dashboard-nav-list">
+        <a href="#" class="dashboard-nav-item"
+        ><i class="fas fa-home"></i> Home
+      </a>
+      <a href="../autenticacion/menu" class="dashboard-nav-item"
+        ><i class="fas fa-tachometer-alt"></i> Profesor
+      </a>
+      <a href="../autenticacion/lista-alumno" class="dashboard-nav-item"
+        ><i class="fas fa-tachometer-alt"></i> Alumno
+      </a>
+      <a href="../autenticacion/lista-materia" class="dashboard-nav-item"
+        ><i class="fas fa-tachometer-alt"></i> Materia
+      </a>
+      <a
+        href="../autenticacion/lista-profesor-materia"
+        class="dashboard-nav-item"
+        ><i class="fas fa-tachometer-alt"></i> Profesor/Materia
+      </a>
+      <a href="../autenticacion/lista-alumno-materia" class="dashboard-nav-item active"
+        ><i class="fas fa-tachometer-alt"></i> Alumno/Materia
+      </a>
+      <a href="../autenticacion/lista-notas" class="dashboard-nav-item"
+        ><i class="fas fa-tachometer-alt"></i> Notas
+      </a>
+      <div class="nav-item-divider"></div>
+      <a href="#" class="dashboard-nav-item"
+        ><i class="fas fa-sign-out-alt"></i> Logout
+      </a>
+      </nav>
+    </div>
+    <div class="dashboard-app">
+      <header class="dashboard-toolbar">
+        <a href="#!" class="menu-toggle"><i class="fas fa-bars"></i></a>
+      </header>
+      <div class="dashboard-content">
+        <div class="container">
+          <div class="card">
+            <div class="card-header">
+              <h1>Crear/Actualizar Profesor</h1>
+            </div>
+            <div class="card-body">
+              <div class="d-flex flex-column">
+                <div class="p-2">
+                    <label>Alumno</label>
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Seleccione...</option>
+                      <option value="1">Brayan</option>
+                    </select>
+                  </div>
+                  <div class="p-2">
+                    <label>Materia</label>
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected>Seleccione...</option>
+                      <option value="1">Matematica</option>
+                    </select>
+                  </div>
+                  <div class="p-2">
+                    <button
+                      type="button"
+                      class="btn btn-success"
+                      style="background-color: #c46e0d"
+                    >
+                      Asociar
+                    </button>
+                  </div>
+                  <div class="p-2">
+                    <table class="table align-middle mb-0 bg-white">
+                      <thead class="bg-light">
+                        <tr>
+                          <th>Nombre Alumno</th>
+                          <th>Nombre Materia</th>
+                          <th>Estado</th>
+                          <th>Actions</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            <div class="d-flex align-items-center">
+                              <div class="ms-3">
+                                <p class="text-muted mb-0">
+                                  Brayan Antonio Rojas Torres
+                                </p>
+                              </div>
+                            </div>
+                          </td>
+                          <td>
+                            <p class="text-muted mb-0">Matematica</p>
+                          </td>
+                          <td>
+                            <p class="text-muted mb-0">Activo</p>
+                          </td>
+                          <td>
+                            <button
+                              type="button"
+                              class="btn btn-link btn-sm btn-rounded"
+                            >
+                              Editar
+                            </button>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

@@ -10,6 +10,9 @@ import { ListaAlumnoComponent } from './lista-alumno/lista-alumno.component';
 import { CrearAlumnoComponent } from './crear-alumno/crear-alumno.component';
 import { ListaMateriaComponent } from './lista-materia/lista-materia.component';
 import { CrearMateriaComponent } from './crear-materia/crear-materia.component';
+import { ListaProfesorMateriaComponent } from './lista-profesor-materia/lista-profesor-materia.component';
+import { ListaAlumnoMateriaComponent } from './lista-alumno-materia/lista-alumno-materia.component';
+import { ListaNotasComponent } from './lista-notas/lista-notas.component';
 
 
 @NgModule({
@@ -20,7 +23,10 @@ import { CrearMateriaComponent } from './crear-materia/crear-materia.component';
     ListaAlumnoComponent,
     CrearAlumnoComponent,
     ListaMateriaComponent,
-    CrearMateriaComponent
+    CrearMateriaComponent,
+    ListaProfesorMateriaComponent,
+    ListaAlumnoMateriaComponent,
+    ListaNotasComponent
   ],
   imports: [
     CommonModule,
